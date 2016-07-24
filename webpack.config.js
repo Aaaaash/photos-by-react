@@ -1,16 +1,15 @@
 var webpack=require('webpack');
 module.exports={
-    entry:[
-        "webpack-dev-server/client?http://0.0.0.0:3000",
-        "webpack/hot/only-dev-server",
-        "./js/main.js"
-    ],
+    entry:{
+        app:"./js/main.js",
+        vendor:["jquery","react"]
+    },
     output:{
         path:"./assets/",
         filename:"app.js",
         publicPath: '/assets'
     },
-    devtool:"source-map",
+    devtool:false,
     module:{
         loaders:[
             {
@@ -28,9 +27,13 @@ module.exports={
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.UglifyJsPlugin({
+            output: {
+                comments: false,
+            },
             compress: {
                 warnings: false
             }
-       })
+        }),
+        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
     ]
 };
