@@ -4,49 +4,49 @@
         "num":"8",
         "imgInfo":[
             {
-                "url":"photos-by-react/img/1.jpg",
+                "url":"../photos-by-react/img/1.jpg",
                 "tit":"鼓楼",
                 "time":"03.07.16",
                 "content":"鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼鼓楼"
             },
             {
-                "url":"photos-by-react/img/2.jpg",
+                "url":"../photos-by-react/img/2.jpg",
                 "tit":"秀萌萌",
                 "time":"04.07.16",
                 "content":"秀萌萌坐在草地上秀萌萌坐在草地上秀萌萌坐在草地上秀萌萌坐在草地上秀萌萌坐在草地上秀萌萌坐在草地上秀萌萌坐在草地上秀萌萌坐在草地上"
             },
             {
-                "url":"photos-by-react/img/3.jpg",
+                "url":"../photos-by-react/img/3.jpg",
                 "tit":"钟楼",
                 "time":"03.07.16",
                 "content":"钟楼钟楼钟楼钟楼钟楼钟楼钟楼钟楼钟楼钟楼钟楼"
             },
             {
-                "url":"photos-by-react/img/4.jpg",
+                "url":"../photos-by-react/img/4.jpg",
                 "tit":"晚上的钟楼",
                 "time":"05.07.16",
                 "content":"晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼晚上的钟楼"
             },
             {
-                "url":"photos-by-react/img/5.jpg",
+                "url":"../photos-by-react/img/5.jpg",
                 "tit":"大明宫",
                 "time":"04.07.16",
                 "content":"大明宫词大明宫词大明宫词大明宫词大明宫词大明宫词大明宫词大明宫词大明宫词大明宫词"
             },
             {
-                "url":"photos-by-react/img/6.jpg",
+                "url":"../photos-by-react/img/6.jpg",
                 "tit":"还是大明宫",
                 "time":"05.07.16",
                 "content":"大明宫词"
             },
             {
-                "url":"photos-by-react/img/7.jpg",
+                "url":"../photos-by-react/img/7.jpg",
                 "tit":"秀萌萌玩泡泡",
                 "time":"02.07.16",
                 "content":"大雁塔大雁塔大雁塔大雁塔大雁塔大雁塔大雁塔大雁塔"
             },
             {
-                "url":"photos-by-react/img/8.jpg",
+                "url":"../photos-by-react/img/8.jpg",
                 "tit":"回民街",
                 "time":"02.07.16",
                 "content":"回民街的大螃蟹回民街的大螃蟹回民街的大螃蟹回民街的大螃蟹回民街的大螃蟹回民街的大螃蟹回民街的大螃蟹回民街的大螃蟹"

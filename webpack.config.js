@@ -2,7 +2,7 @@ var webpack=require('webpack');
 module.exports={
     entry:{
         app:"./js/main.js",
-        vendor:["jquery","react"]
+        vendor:["react","react-dom"]
     },
     output:{
         path:"./assets/",

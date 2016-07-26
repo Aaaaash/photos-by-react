@@ -1,46 +1,21 @@
 var React=require('react');
 var $=require('jquery');
 var MainList=require('./MainList');
-var ShadowBox=require('./ShadowBox');
+var ShadowBox=require('./ShadowBox').ShadowBox;
 var ImgData=require('./ImgData.json');
 var RightMain=React.createClass({
-    getInitialState:function(){
-        return {
-            imgData:ImgData,
-            activeData:[]
-        }
-    },
     render:function(){
-        var mainList=this.state.imgData.map(function(item,index){
+        var mainList=ImgData.map(function(item,index){
             return (
-                <MainList imgData={item} key={index} handleShow={this.showShadowBox}/>
+                <MainList imgData={item} key={index}/>
             )
         }.bind(this));
         return (
             <div className="right-main">
                 {mainList}
-                <ShadowBox hideShadow={this.hideShadowBox} imgInfo={this.state.activeData}/>
+                <ShadowBox hideShadow={this.hideShadowBox}/>
             </div>
         )
-    },
-    showShadowBox:function(data){
-        this.setState({
-            activeData:data
-        });
-        $("html").css("overflowY","hidden");
-        $(".shadow-box").height($(window)
-            .height())
-            .css({
-                "top":$(document).scrollTop(),
-                "display":"block"
-            }).stop().animate({
-                opacity:1
-            },200,function(){
-                $(".imgBig-box").css("display","block").stop().animate({
-                    opacity:1,
-                    top:"0"
-                },300)
-            });
     },
     hideShadowBox:function(){
         $(".imgBig-box").stop().animate({
@@ -50,10 +25,13 @@ var RightMain=React.createClass({
             $(".imgBig-box").css("display","none");
             $(".shadow-box").animate({
                     opacity:0
-                },200).css("display","none");
+                },200,function(){
+                    $(this).css("display","none");
+                })
             $("html").css("overflowY","scroll");
         });
-
     }
 });
-module.exports=RightMain;
+module.exports={
+    RightMain:RightMain
+};
